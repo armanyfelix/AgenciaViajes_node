@@ -1,0 +1,31 @@
+extends ./layout/index
+
+block slider
+    .slider 
+        h1 Rio de Janeiro
+        em aventura
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6 
+                p Río de Janeiro1​ (en español, Río de enero, AFI: [ˈʁi.u dʒi ʒaˈnejɾu]), fundada como São Sebastião do Rio de Janeiro,3​ es una ciudad, municipio brasileño y capital del estado homónimo, ubicada en el sureste del país. Es la segunda ciudad más poblada de Brasil después de São Paulo.4​
+                p Fue la capital del Imperio portugués entre 1808 y 1822 y, más tarde, la capital de Brasil desde 1822, cuando la nación declaró su independencia del país luso. Conservó ese rango hasta la inauguración de Brasilia, en 1960.
+                p Es uno de los principales centros económicos, de recursos culturales y financieros de Brasil. Es conocida internacionalmente por sus iconos culturales y paisajes, como el Pan de Azúcar, la estatua del Cristo Redentor (una de las siete maravillas del mundo moderno), las playas de Copacabana e Ipanema, el Estadio de Maracaná, el parque nacional de Tijuca (el mayor bosque urbano del mundo), la Quinta da Boa Vista, la isla de Paquetá, las Fiestas de Fin de Año en Copacabana y la celebración del Carnaval 
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+        include ./layout/bloque_viaje
+    
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de Marzo de 2022 - 28 de MArzo de 2022
+                        p.precio  $2,500 USD
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
