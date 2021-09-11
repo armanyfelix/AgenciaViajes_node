@@ -4,8 +4,8 @@
   "description": "Primer proyecto con node.js",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "dev": "nodemon server",
+    "start": "node server"
   },
   "type": "module",
   "author": "armany",

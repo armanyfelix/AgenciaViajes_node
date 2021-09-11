@@ -35,13 +35,13 @@ const guardarTestimonial = async (req, res) => {
         })
     } else {
         // Almacenarlo en la base de datos
-
         try {
             await Testimonial.create({
                 nombre,
                 correo,
                 mensaje
             })
+            res.redirect('/testimoniales')
         } catch (error) {
             console.log(error);
         }
